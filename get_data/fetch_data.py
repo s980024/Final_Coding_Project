@@ -13,8 +13,14 @@ def load_heart_data():
     X = heart_disease.data.features 
     y = heart_disease.data.targets 
   
-# metadata 
-print(heart_disease.metadata) 
-  
-# variable information 
-print(heart_disease.variables) 
+    feature_names = heart_disease.variables[heart_disease.variables['role'] == 'Feature']['name'].tolist()
+    target_name = heart_disease.variables[heart_disease.variables['role'] == 'Target']['name'].values[0]
+
+    df = pd.DataFrame(heart_disease.data.features, columns=feature_names)
+    df[target_name] = heart_disease.data.targets
+
+    print(df.head())
+
+    return df, target_name
+
+load_heart_data()
