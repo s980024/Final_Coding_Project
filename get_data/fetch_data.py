@@ -19,7 +19,7 @@ def load_heart_data():
     df = pd.DataFrame(heart_disease.data.features, columns=feature_names)
     df[target_name] = heart_disease.data.targets
 
-    print(df.head())
+    # print(df.head())
 
     return df, target_name
 
