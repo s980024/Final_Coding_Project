@@ -27,10 +27,10 @@ def make_plot(variable_1, variable_2):
     plt.ylabel(f'{variable_2_label}')
     plt.legend(title='Heart Disease')
     plt.grid(True)
-    plt.savefig(f'/workspaces/Final_Coding_Project/testing_variables/plots_from_tests')
+    plt.savefig(f'/workspaces/Final_Coding_Project/plots/{variable_1_label}vs{variable_2_label}.png', dpi=150)
     plt.close()
 
 
-# make_plot('age', 'trestbps')
+make_plot('age', 'trestbps')
 # make_plot('trestbps', 'thalach')
-make_plot('oldpeak', 'thalach')
+# make_plot('oldpeak', 'thalach')
