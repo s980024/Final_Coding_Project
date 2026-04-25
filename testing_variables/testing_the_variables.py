@@ -31,6 +31,11 @@ def make_plot(variable_1, variable_2):
     plt.close()
 
 
-make_plot('age', 'trestbps')
+# make_plot('age', 'trestbps')
 # make_plot('trestbps', 'thalach')
 # make_plot('oldpeak', 'thalach')
+# make_plot('chol', 'trestbps')
+# make_plot('chol', 'oldpeak')
+# make_plot('chol', 'thalach')
+# make_plot('chol', 'age')
+make_plot('oldpeak', 'age')
