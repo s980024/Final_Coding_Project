@@ -38,4 +38,5 @@ def make_plot(variable_1, variable_2):
 # make_plot('chol', 'oldpeak')
 # make_plot('chol', 'thalach')
 # make_plot('chol', 'age')
-make_plot('oldpeak', 'age')
+# make_plot('oldpeak', 'age')
+# make_plot('age', 'thalach') prob best one yet
