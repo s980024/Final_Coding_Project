@@ -28,7 +28,7 @@ knn.fit(X_train, y_train)
 y_pred = knn.predict(X_test)
 y_train_pred = knn.predict(X_train)
 
-# create confusion matrix
+# create confusion matrix, it does not show the values that are not predicted
 conf_matrix_knn = pd.crosstab(
     y_test,
     y_pred,
@@ -56,7 +56,7 @@ train_df['KNN_prediction'] = y_train_pred
 train_df['correct'] = train_df['KNN_prediction'] == train_df[target_name]
 
 # Create a visualization of KNN classifier results
-# os.makedirs("/plots", exist_ok=True)
+# os.makedirs("/workspaces/Final_Coding_Project/plots/plots", exist_ok=True)
 
 # Create a visualization for training data
 # I left this commented out, but feel free to toggle this plot to see training results.
