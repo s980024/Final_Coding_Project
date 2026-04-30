@@ -20,8 +20,9 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=y
 )
 
-# I selected k=1 for the KNN classifier.
-k = 19
+# I selected k=12 for the KNN classifier because this was the number I could get the best accuracy with.
+k = 12
+
 knn = KNeighborsClassifier(n_neighbors=k)
 knn.fit(X_train, y_train)
 y_pred = knn.predict(X_test)
