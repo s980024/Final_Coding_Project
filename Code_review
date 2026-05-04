@@ -2,10 +2,10 @@
 
 
 ## 1. Basic Info
- - Reviewer:
- - Author of code:
- - Project name:
- - Date:
+ - Reviewer: Kaitlyn Murray
+ - Author of code: Ella Dalton
+ - Project name: 
+ - Date: 5/3/26
 
 ---
 
@@ -13,6 +13,8 @@
 
 In my understanding, this program is trying to...
 
+take data from a dataset containing information about test subjects and whether or not they have heart disease and use it to train a KNN model. Then, it will take user inputted info and tell the user what range they are in to get heart disease based off of their age and maximum heart rate (thalach). Then, the program will give the user more info about heart disease if they 
+prompt it to. 
 
 ---
 
@@ -20,12 +22,12 @@ In my understanding, this program is trying to...
 
 Does the code work as expected?
 
-- [ ] Works as expected  
-- [ ] Partially works  
+- [ ~~~~~~~~~~~~~~~~~~~`] Works as expected  
+- [X] Partially works  *The code written does work as expected, though the program is not finished.
 - [ ] Does not work  
 
 **Notes:**
-- What works:
+- What works: 
 - What doesn't work:
 - Any error messages:
 
