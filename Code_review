@@ -1,105 +1,156 @@
 # Code-Review-Template
 
 
+
+
 ## 1. Basic Info
- - Reviewer: Kaitlyn Murray
- - Author of code: Ella Dalton
- - Project name: 
- - Date: 5/3/26
+- Reviewer: Kaitlyn Murray
+- Author of code: Ella Dalton
+- Project name: Heart Disease Indicator
+- Date: 5/4/26
+
 
 ---
+
 
 ## 2. What the Code is Supposed to Do
 
+
 In my understanding, this program is trying to...
 
-take data from a dataset containing information about test subjects and whether or not they have heart disease and use it to train a KNN model. Then, it will take user inputted info and tell the user what range they are in to get heart disease based off of their age and maximum heart rate (thalach). Then, the program will give the user more info about heart disease if they 
-prompt it to. 
+
+take data from a dataset containing information about test subjects and whether or not they have heart disease and use it to train a KNN model. Then, it will take user inputted info and tell the user what range they are in to get heart disease based off of their age and maximum heart rate (thalach). Then, the program will give the user more info about heart disease if they prompt it to.
+
 
 ---
+
 
 ## 3. Functionality Check
 
+
 Does the code work as expected?
 
-- [ ~~~~~~~~~~~~~~~~~~~`] Works as expected  
-- [X] Partially works  *The code written does work as expected, though the program is not finished.
-- [ ] Does not work  
+
+- [ ] Works as expected 
+- [X] Partially works  *Most of the code written does work as expected, though the program is not finished.
+- [ ] Does not work 
+
 
 **Notes:**
-- What works: 
-- What doesn't work:
-- Any error messages:
+- What works: Importing data, making plots, and the ML model
+- What doesn't work: the info() function in the Person class
+- Any error messages: When running the info() function, it gave an error because the yes and Yes are not in quotation marks. 
+
 
 ---
+
 
 ## 4. Code Clarity & Readability
 
-- [ ] Easy to read  
-- [ ] Somewhat confusing  
-- [ ] Hard to follow  
+
+- [X] Easy to read 
+- [ ] Somewhat confusing 
+- [ ] Hard to follow 
+
 
 **Comments:**
 - Are variable names meaningful?
+Yes, most of the variable names are meaningful, though as more are made they will probably need to be more descriptive/specific.
 - Are functions clearly named?
+Yes, though they might need to be more clear as the program gets bigger.
 - Is the code logically organized?
-
+Yes.
 ---
+
 
 ## 5. Structure & Design
 
-- [ ] Well structured  
-- [ ] Needs improvement  
-- [ ] Disorganized  
+
+- [X] Well structured 
+- [ ] Needs improvement 
+- [ ] Disorganized 
+
 
 **Comments:**
 - Are functions used well?
+Yes, though you may need to be careful when making the functions in the Person class, like the info function, as I think it could become super big easily, so just make sure to split it up between different functions. 
 - Is there repeated code that could be simplified?
+No
 - Could anything be broken into smaller functions?
-
+If you want, you could put the code for the outputs for the Machine Learning Model (like the confusion matrix and accuracy score) into different functions so you could call them at different times. 
 ---
+
 
 ## 6. Python Best Practices
 
-- [ ] Good practices used  
-- [ ] Some issues  
-- [ ] Major issues  
+
+- [X] Good practices used 
+- [ ] Some issues 
+- [ ] Major issues 
+
 
 **Check for:**
-- Proper indentation
-- Clean and readable code
-- Appropriate use of loops and conditionals
-- Avoidance of unnecessary global variables
-
+- Proper indentation ✓
+- Clean and readable code ✓
+- Appropriate use of loops and conditionals ✓
+- Avoidance of unnecessary global variables ✓
+ 
 ---
+
 
 ## 7. Bugs or Issues Found
 
+
 Be specific and helpful.
 
+
+There are no bugs or issues that need to be fixed right now.
+
+
 ---
+
 
 ## 8. Suggested Improvements
 
+
 Provide actionable suggestions:
+When building the info() function in the Person class, divide it into multiple smaller functions, so that it doesn’t become one big long function
+Put ML model confusion matrix, accuracy score, and visualization into separate functions, so that you can run them when you need to (possibly separately).
+
+
 
 
 ---
+
 
 ## 9. Positive Feedback
 
+
 List at least two things done well:
+I think that your ML model was built well and the code for it is organized
+I think the class for your main program is being built well, and I think it is also organized well.
+
+
 
 
 ---
 
+
 ## 10. Final Summary
+
 
 Overall evaluation:
 
-- [ ] Excellent  
-- [ ] Good  
-- [ ] Needs improvement  
-- [ ] Needs significant revision  
+
+- [ ] Excellent 
+- [X] Good 
+- [ ] Needs improvement 
+- [ ] Needs significant revision 
+
 
 **Summary:**
+
+
+Your program looks good so far, I only have some minor suggestions to help make it more organized. The main things being to be careful when making the info() function that it doesn't become too big, and putting the ml model stuff in a separate function, probably in the Person class, so you can call them when you need to. 
+
+Also, you may want to plan out what your code will do based on what the user inputs a little more before you continue building the Person class. Just make sure you know what functions you want and what you want them to do. 
