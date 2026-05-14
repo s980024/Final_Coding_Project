@@ -21,14 +21,15 @@ class Person():
         self.input = input("Would you like some info on prevention of heart disease or to keep diseases from getting worse?")
         self.list_info = ["If you are smoking it is recommended that you stop, as nicotine can narrow your blood vessels which is not good.", "It is recommended to change your diet to a low soidum/low fat diet and manage your weight.", "If you have not seen a doctor yet and your prediction says you have heart disease, it would be a good idea to schedule a doctor appointment.", "It is recommended to aim for at least of 150 minutes of moderate intensity of exercise once a week to try and keep it from getting worse.", "If you have a doctor and are on medications, it is recommended that you keep taking that medication until your doctor tells you not to.", "It is also good to get between 7-8 hours of sleep to help keep blood pressure low. "]
         self.i = 0
-        while self.i < len(self.list_info):
-            #make lists of the info and then print random
-            print("self.list_info[self.i]")
-            self.list_info.pop(self.list_info[self.i])
-            self.i += 1
-            input_break = input("Would you like more information? ")
-            if input_break == "no" or input_break == "No":
-                break
+        if self.input == "yes" or self.input == "Yes":
+            while self.i < len(self.list_info):
+                #make lists of the info and then print random
+                print(self.list_info[self.i])
+                self.list_info.pop(self.list_info[self.i])
+                self.i += 1
+                input_break = input("Would you like more information? ")
+                if input_break == "no" or input_break == "No":
+                    break
 
 
 
@@ -36,6 +37,7 @@ age_input = input("What is your age? ")
 thalach_input = input("What is your maximum heart rate achieved? ")
 person_1 = Person(age_input, thalach_input)
 print(person_1.run_KNN_model())
+person_1.info()
 
 
 
