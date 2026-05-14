@@ -42,7 +42,7 @@ def test_terminal_info_printed():
 def test_terminal_info_printed():
     get_info_printed())
     captured = capsys.readouterr()
-    assert captured.out = "It you have not seen a doctor yet and you information says you have heart disease, it would be a good idea to check in with a doctor. \n"
+    assert captured.out = "If you have not seen a doctor yet and you information says you have heart disease, it would be a good idea to check in with a doctor. \n"
 
 def test_terminal_info_printed():
     get_info_printed())
