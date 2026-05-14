@@ -25,6 +25,15 @@ k = 12
 
 knn = KNeighborsClassifier(n_neighbors=k)
 knn.fit(X_train, y_train)
+#I was struggling to figure this part out 
+#(even after looking into it online), 
+#so I had to ask the AI assistant if it was even possible
+#and how they would do it and where they recommend putting it. 
+#Lines 33-35 is code from the AI
+new_sample = pd.DataFrame({'age': [55], 'thalach': [140]})
+prediction = knn.predict(new_sample)
+print(prediction)
+
 y_pred = knn.predict(X_test)
 y_train_pred = knn.predict(X_train)
 
@@ -76,7 +85,7 @@ train_df['correct'] = train_df['KNN_prediction'] == train_df[target_name]
 # plt.ylabel('Maximum Heart Rate Achieved(cm)')
 # plt.legend(title='Prediction Correct')
 # plt.grid(True)
-# plt.savefig('example/e_ml_model/plots/knn_model_training_results.png', dpi=150)
+# plt.savefig('/workspaces/Final_Coding_Project/plots.png', dpi=150)
 # plt.close()
 
 # Create a visualization for test data
