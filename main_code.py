@@ -25,7 +25,7 @@ class Person():
             while self.i < len(self.list_info):
                 #make lists of the info and then print random
                 print(self.list_info[self.i])
-                self.list_info.pop(self.list_info[self.i])
+                self.list_info.pop(self.i)
                 self.i += 1
                 input_break = input("Would you like more information? ")
                 if input_break == "no" or input_break == "No":
